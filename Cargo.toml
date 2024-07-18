@@ -5,3 +5,6 @@ edition = "2021"
 license = "MIT"
 description = "htmlrs"
 homepage = "https://github.com/MNThomson/htmlrs"
+
+[dependencies]
+leptos = { version = "0.6", features = ["ssr", "experimental-islands"] }
