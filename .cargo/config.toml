@@ -1,3 +1,5 @@
 [alias]
+r = ["watch", "-c", "-x", "run -q --example basic"]
 t = "nextest run --lib"
 c = ["watch", "-c", "-x", "clippy --all-targets"]
+e = ["watch", "-c", "-s", "cargo run --example 2>&1 | grep -E '^ ' | xargs -n1 cargo run --example"]
