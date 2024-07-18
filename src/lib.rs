@@ -1,4 +1,4 @@
-pub use leptos::{component, view, IntoView};
+pub use leptos::{component, view, Children, IntoView};
 
 #[macro_export]
 macro_rules! html {
