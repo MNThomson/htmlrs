@@ -6,5 +6,17 @@ license = "MIT"
 description = "htmlrs"
 homepage = "https://github.com/MNThomson/htmlrs"
 
+[profile.dev.package.leptos]
+opt-level = 3
+
 [dependencies]
 leptos = { version = "0.6", features = ["ssr", "experimental-islands"] }
+
+[dev-dependencies]
+criterion = { version = "0.3", features = ["html_reports"]}
+maud = "0.26"
+hypertext = "0.5"
+
+[[bench]]
+name = "bench"
+harness = false
